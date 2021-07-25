@@ -1,0 +1,73 @@
+.policy-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+.policy-item td {
+  padding: 10px;
+}
+
+.policy-item button, .policy-item a {
+  display: none !important;
+}
+
+.policy-item:hover button, .policy-item:hover a {
+  display: inline !important;
+  padding: 0rem !important;
+  margin: 0.6rem 0.1rem 0 0 !important;
+}
+
+.policy-item:hover .marital_status {
+  display: none !important;
+}
+
+.policy-item .marital_status {
+  padding: 10px;
+  border: 1px black;
+}
+
+.policy-item__content {
+  padding: 0;
+}
+
+.policy-item__info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.policy-item__info h2,
+.policy-item__info h3,
+.policy-item__info p {
+  margin: 0 0 0.5rem 0;
+}
+
+.policy-item__actions {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.policy-item__modal-content {
+  padding: 0;
+}
+
+.policy-item__modal-actions {
+  text-align: right;
+}
+
+.policy-item__actions button,
+.policy-item__actions a {
+  margin: 0.5rem;
+}
+
+.map-container {
+  height: 15rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .policy-item__image {
+    height: 20rem;
+  } 
+}

@@ -1,0 +1,122 @@
+.policy-list {
+  list-style: none;
+  margin: 1rem auto;
+  padding: 0;
+  width: 98%;
+  max-width: 98%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.policy-header {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  padding: 0;
+  width: 98%;
+  max-width: 98%;
+}
+
+.search-input {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+  margin: 1rem;
+  width: 31%;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.search-input button {
+  margin: 1rem;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-input input {
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-input label {
+  font-weight: 600;
+}
+
+.main-div {
+  margin: auto;
+  padding: 0;
+  width: 98%;
+  max-width: 98%;
+  height: 90vh;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+/* To display the block as level element */
+table.table-scroll tbody,
+table.table-scroll thead {
+  display: block;
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+thead tr th {
+  height: 40px;
+  align-items: center;
+}
+
+.table-scroll {
+  box-shadow: 0px 2px 8px rgb(0, 0, 0);
+  margin: 1rem;
+}
+
+table.table-scroll tbody {
+  /* Set the height of table body */
+  height: 67vh;
+
+  /* Set vertical scroll */
+  overflow-y: auto;
+
+  /* Hide the horizontal scroll */
+  overflow-x: hidden;
+}
+
+tbody td,
+thead th {
+  width: 200px;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tfoot {
+  height: 5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 75%;
+}
+
+tfoot .count-span {
+  padding: 10px;
+}
+
+.empty-table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+tfoot select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+}

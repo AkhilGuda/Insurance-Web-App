@@ -1,0 +1,39 @@
+.chart-main-div {
+  height: 89vh;
+}
+
+.graph-search-input {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 5%;
+  margin: 1rem;
+  width: 42%;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.graph-search-input button {
+  margin: 1rem;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.graph-search-input label {
+  font-weight: 600;
+}
+
+.graph-search-input input,
+.graph-search-input select {
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.charts-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10%;
+  margin: 1rem;
+  width: 100%;
+  padding: 1rem 1rem 0rem 1rem;
+  height: 85%;
+}

@@ -1,5 +1,13 @@
 # Insurance-Web-App
 
+## Prerequisites
+   ```
+   Python>=3.6
+   Node>=14.17.3
+   Docker>=20.10.7
+   Postgres>=10.17.2
+   ```
+
 ### Steps to build Docker Image
 1. Go to `Insurance-Web-App/backend` and build code using the below command.
 
@@ -16,11 +24,23 @@
 4. Create the server by runnning the docker image created in above step.
 
    `docker run -i -t -d --name insurance -p 5000:5000/tcp insurance:1.0`
-
-5. Start the server by running below command.
+   
+### Create the database
+    1. Create database named `insurance` in postgres.
+    
+    2. Initialize the application database schema using the below commands.
+    
+       docker exec -it insurance bash
+       insurance-deploy init_db
+    
+### Command to start the server
 
    `docker exec insurance bash -c "sh startup.sh"`
 
+### Command to check the logs
+
+   `docker exec insurance bash -c "tail -f /scripts/insurance.log"`
+   
 ### Command to shutdown the server
    `docker exec insurance bash -c "sh restart.sh"`
 

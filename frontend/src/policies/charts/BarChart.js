@@ -65,7 +65,6 @@ const CustomBarChart = (props) => {
         newData[month] = 1;
       }
     });
-    console.log(newData);
     let barChartData = [];
     for (const key in newData) {
       barChartData.push({ month: key, policies: newData[key] });
@@ -75,7 +74,6 @@ const CustomBarChart = (props) => {
   };
 
   const data = getBarChartData();
-  console.log(data);
 
   // const renderCustomBarLabel = ({ payload, x, y, width, height, value }) => {
   //     return <text x={x + width / 2} y={y} fill="#666" textAnchor="middle" dy={-6}>{`value: ${value}`}</text>;

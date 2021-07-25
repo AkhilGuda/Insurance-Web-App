@@ -25,7 +25,6 @@ const CustomScatterChart = (props) => {
                 newData[month] = 1
             }
         })
-        console.log(newData)
         let scatterChartdata = []
         for (const key in newData) {
             scatterChartdata.push({ "Month": key, "policies": newData[key] });
@@ -35,7 +34,6 @@ const CustomScatterChart = (props) => {
     };
 
     const data = getScatterChartData();
-    console.log(data)
 
     return (
         <ScatterChart width={600} height={300} data={data}>

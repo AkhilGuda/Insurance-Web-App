@@ -28,7 +28,6 @@ const CustomPieChart = (props) => {
                 newData[month] = 1
             }
         })
-        console.log(newData)
         let pieChartdata = []
         for (const key in newData) {
             pieChartdata.push({ "month": key, "policies": newData[key] });
@@ -38,7 +37,6 @@ const CustomPieChart = (props) => {
     };
 
     const data = getPieChartData();
-    console.log(data)
 
     return (
         <PieChart width={600} height={300} className="pie-chart">

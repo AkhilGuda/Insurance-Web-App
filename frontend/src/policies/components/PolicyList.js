@@ -25,7 +25,6 @@ const PolicyList = (props) => {
 
     return list.filter((each) => {
       let filter = false;
-      console.log(policy_id, customer_id);
       if (policy_id === "" && customer_id === "") {
         filter = true;
       } else if (policy_id !== "" && customer_id !== "") {

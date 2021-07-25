@@ -27,7 +27,6 @@ const CustomLineChart = (props) => {
                 newData[month] = 1
             }
         })
-        console.log(newData)
         let lineChartdata = []
         for (const key in newData) {
             lineChartdata.push({ "month": key, "policies": newData[key] });
@@ -37,7 +36,6 @@ const CustomLineChart = (props) => {
     };
 
     const data = getLineChartData();
-    console.log(data)
 
     return (
         <LineChart width={600} height={300} data={data}>

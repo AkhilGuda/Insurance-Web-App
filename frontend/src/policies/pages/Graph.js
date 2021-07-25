@@ -34,7 +34,6 @@ const Graph = () => {
 
         return list.filter(each => {
             let filter = false
-            console.log(policy_id, customer_id, customer_region)
             if (policy_id === '' && customer_id === '' && customer_region === '') {
                 filter = true
             }

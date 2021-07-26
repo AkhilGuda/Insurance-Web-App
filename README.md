@@ -33,6 +33,12 @@
        docker exec -it insurance bash
        insurance-deploy init_db
     
+### Load sample data
+   ```
+   cd Insurance-Web-App
+   python load_sample_data.py
+   ```
+
 ### Command to start the server
 
    `docker exec insurance bash -c "sh startup.sh"`

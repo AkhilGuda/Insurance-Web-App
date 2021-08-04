@@ -37,21 +37,38 @@ const Graph = () => {
             if (policy_id === '' && customer_id === '' && customer_region === '') {
                 filter = true
             }
-            else if (policy_id === '' && customer_id === '' && each.customer_region === customer_region) {
-                filter = true
-            }
-            else if (policy_id === '' && customer_id !== '' && each.customer_region === customer_region) {
-                if (each.customer_id === parseInt(customer_id)) {
+            else if (policy_id === '' && customer_id === '' && customer_region !== '') {
+                if (customer_region === each.customer_region) {
                     filter = true
                 }
             }
-            else if (policy_id !== '' && customer_id === '' && each.customer_region === customer_region) {
+            else if (policy_id === '' && customer_id !== '' && customer_region !== '') {
+                if (each.customer_id === parseInt(customer_id) && customer_region === each.customer_region) {
+                    filter = true
+                }
+            }
+            else if (policy_id !== '' && customer_id !== '' && customer_region !== '') {
+                if (each.id === parseInt(policy_id) && each.customer_id === parseInt(customer_id) && customer_region === each.customer_region) {
+                    filter = true
+                }
+            }
+            else if (policy_id !== '' && customer_id !== '' && customer_region === '') {
+                if (each.id === parseInt(policy_id) && each.customer_id === parseInt(customer_id)) {
+                    filter = true
+                }
+            }
+            else if (policy_id !== '' && customer_id === '' && customer_region === '') {
                 if (each.id === parseInt(policy_id)) {
                     filter = true
                 }
             }
-            else if (policy_id !== '' && customer_id !== '' && each.customer_region === customer_region) {
-                if (each.id === parseInt(policy_id) && each.customer_id === parseInt(customer_id)) {
+            else if (policy_id === '' && customer_id !== '' && customer_region === '') {
+                if (each.customer_id === parseInt(customer_id)) {
+                    filter = true
+                }
+            }
+            else if (policy_id !== '' && customer_id === '' && customer_region !== '') {
+                if (each.id === parseInt(policy_id) && each.customer_region === customer_region) {
                     filter = true
                 }
             }
